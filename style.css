@@ -1,6 +1,7 @@
 body {
     color: white;
-    background-color: hsl(226, 43%, 10%)
+    background-color: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
 }
 .wrapper {
     display: grid;
@@ -12,7 +13,6 @@ body {
 
     /* set the row height with grid-auto-rows */
     grid-auto-rows: minmax(100px, 244px);
-    border: 1px solid red;
 
   }
 
@@ -72,6 +72,45 @@ body {
     
   }
 
+  .profile-image, .profile-detail {
+      margin:37px 39px 0 32px;
+  }
+
+  
+
+  .first-name, .last-name {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 300;
+  }
+
+  h4 {
+      font-weight: 300;
+      color: #BBC0FF;
+      font-size: 15px;
+      margin: 0;
+  }
+
+  h2 {
+      font-size: 40px;
+      margin: 0;
+      font-weight: 300;
+  }
+
+  .links {
+      display: flex;
+      flex-direction: column;
+  }
+
+  .link-item {
+    margin: 15px 32px;
+    color: #7078C9;
+  }
+
+  .link-item.active {
+      color: white;
+  }
+
 @media screen and (max-width: 375px) {
     .wrapper {
         margin: 0 24px;
@@ -97,5 +136,38 @@ body {
         grid-column: auto;
         grid-row: auto;
         margin: 0;
+    }
+
+    .details {
+        display: flex;
+    }
+
+    .profile-detail {
+        flex-grow: 1;
+        margin: 25px 20px 0 20px;
+    }
+
+    .profile-image {
+        width: 20px;
+        margin:15px 39px 0 20px;
+    }
+
+    .profile-image > img {
+        height: 64px;
+        width: 64px;;
+    }
+
+    .first-name, .last-name {
+        font-size: 24px;
+        margin: 0;
+        font-weight: 300;
+      }
+
+    .links {
+        flex-direction: row;
+    }
+  
+    .link-item {
+      margin: 20px 27px;
     }
 }
