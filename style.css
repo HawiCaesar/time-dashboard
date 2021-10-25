@@ -21,7 +21,9 @@ body {
       display: none;
   }
    .timeslot-1, .timeslot-2, .timeslot-3, .timeslot-4, .timeslot-5, .timeslot-6 {
-    border: 2px solid green;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: top 0px right 20px;
   }
   .profile {
     background-color: hsl(235, 46%, 20%);
@@ -33,31 +35,59 @@ body {
   .timeslot-1 {
     grid-column: 2;
     grid-row: 1;
-    
+    background-color: hsl(15, 100%, 70%);
+    background-image: url('./images/icon-work.svg');
   }
   .timeslot-2 {
     grid-column: 3;
     grid-row: 1;
+    background-color: hsl(195, 74%, 62%);
+    background-image: url('./images/icon-play.svg');
   }
 
   .timeslot-3 {
     grid-column: 4;
     grid-row: 1;
+    background-color: hsl(348, 100%, 68%);
+    background-image: url('./images/icon-study.svg');
   }
 
   .timeslot-4 {
     grid-column: 2;
     grid-row: 2;
+    background-color: hsl(145, 58%, 55%);
+    background-image: url('./images/icon-exercise.svg');
   }
 
   .timeslot-5 {
     grid-column: 3;
     grid-row: 2;
+    background-color: hsl(264, 64%, 52%);
+    background-image: url('./images/icon-social.svg');
   }
 
   .timeslot-6 {
     grid-column: 4;
     grid-row: 2;
+    background-color: hsl(43, 84%, 65%);
+    background-image: url('./images/icon-self-care.svg');
+  }
+
+  .slot-info {
+      background-color: hsl(235, 46%, 20%);
+      height: 199px;
+      margin: 46px 0 0 0;
+      border-radius: 15px;
+  }
+
+  .slot-title {
+      background-image: url('./images/icon-ellipsis.svg');
+      background-repeat: no-repeat;
+      background-position: top 35px right 25px;
+      padding-top: 29px;
+      padding-left: 30px;
+      padding-bottom: 25px;
+      font-size: 18px;
   }
 
   .details {
@@ -82,6 +112,19 @@ body {
     font-size: 40px;
     margin: 0;
     font-weight: 300;
+  }
+
+  .duration-now {
+      padding-left: 30px;
+      font-size: 50px;
+      font-weight: 300;
+  }
+
+  .duration-lastweek {
+    padding-left: 30px;
+    font-size: 15px;
+    color: hsl(236, 100%, 87%);
+    display: block;
   }
 
   h4 {
@@ -138,6 +181,11 @@ body {
         margin: 0;
     }
 
+    .slot-info {
+        height: 122px;
+        margin: 39px 0 0 0;
+    }
+
     .details {
         display: flex;
     }
@@ -162,6 +210,16 @@ body {
         margin: 0;
         font-weight: 300;
       }
+      .slot-title {
+          padding-bottom: 7px;
+      }
+    .duration-now {
+        font-size: 32px;
+    }
+  
+    .duration-lastweek {
+        display: inline;
+    }
 
     .links {
         flex-direction: row;
