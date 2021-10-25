@@ -35,7 +35,7 @@ let selfCurrent = document.querySelector('#self .slot-info .duration-current')
 let selfPrevious = document.querySelector('#self .slot-info .duration-previous')
 
 
-var initialLoad = document.getElementById("daily");
+var initialLoad = document.getElementById("weekly");
 initialLoad.className += " active"
 
 var timeSlotData = []
@@ -73,7 +73,7 @@ window.fetch('https://my-json-server.typicode.com/HawiCaesar/time-dashboard-demo
     timeSlotData = data
 
     // set up daily time slots
-    showTimeSlots('daily', 'Yesterday')
+    showTimeSlots('weekly', 'Last Week')
 
   })
   .catch(function(e) {
@@ -89,4 +89,5 @@ function getTimeSlotPeriod(period) {
     } else if (period === 'monthly') {
         showTimeSlots('monthly', 'Last Month')
     }
+    return
 }
