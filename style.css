@@ -5,7 +5,7 @@ body {
 }
 .wrapper {
     display: grid;
-    padding: 250px 148px;
+    padding: 248px 148px;
 
     /* have the 4 columns with 1 fragment */
     grid-template-columns: repeat(4, 1fr);
