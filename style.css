@@ -140,10 +140,8 @@ body {
       margin: 0;
   }
 
-  h2 {
-      font-size: 40px;
+  h1{
       margin: 0;
-      font-weight: 300;
   }
 
   .links {
@@ -202,7 +200,7 @@ body {
 
     .profile-detail {
         flex-grow: 1;
-        margin: 25px 20px 0 20px;
+        margin: 15px 20px 0 20px;
     }
 
     .profile-image {
