@@ -2,10 +2,15 @@ body {
     color: white;
     background-color: hsl(226, 43%, 10%);
     font-family: 'Rubik', sans-serif;
+    margin: 0; 
+    display: grid; 
+    min-height: 100vh; 
+    place-content: space-evenly;
 }
 .wrapper {
     display: grid;
-    padding: 248px 148px;
+    /* padding: 248px 148px; */
+    max-width: 1110px; 
 
     /* have the 4 columns with 1 fragment */
     grid-template-columns: repeat(4, 1fr);
@@ -164,7 +169,8 @@ body {
 
 @media screen and (max-width: 375px) {
     .wrapper {
-        padding: 0 24px;
+        /* padding: 0 24px; */
+        
         grid-template-columns: repeat(1, 1fr);
         gap: 24px;
         grid-auto-rows: minmax(160px, auto);

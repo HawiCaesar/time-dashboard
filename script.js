@@ -61,7 +61,9 @@ function showTimeSlots(period, periodText) {
     selfPrevious.innerHTML = `${periodText} - ${timeSlotData[5].timeframes[period].previous} hrs`
 }
 
-window.fetch('https://my-json-server.typicode.com/HawiCaesar/time-dashboard-demo-db/data', {
+console.log(document.PROCESSING_INSTRUCTION_NODE)
+
+window.fetch('https://api.jsonbin.io/b/617716d2aa02be1d445ec7a3', {
     headers : { 
       'Content-Type': 'application/json',
       'Accept': 'application/json'
@@ -70,6 +72,7 @@ window.fetch('https://my-json-server.typicode.com/HawiCaesar/time-dashboard-demo
   .then(function(response) {
     return response.json();
   }).then(function(data) {
+   
     timeSlotData = data
 
     // set up daily time slots
