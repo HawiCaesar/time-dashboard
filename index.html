@@ -15,11 +15,11 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
-  <script src="./script.js" type="text/javascript" defer></script>
+  <script src="./script.js" defer></script>
 </head>
 <body>
 
-  <div class="wrapper">
+  <div class="wrapper" role="main">
     <div class="profile">
       <div class="details">
         <div class="profile-image">
@@ -31,7 +31,7 @@
           <span class="last-name">Robson</span>
         </div>
       </div>
-      <nav class="links">
+      <nav class="links" role="navigation">
         <div class="link-item">
           <a href="#" class="slot-link" id="daily" onclick="getTimeSlotPeriod('daily'); return false;">Daily</a>
         </div>
@@ -86,7 +86,7 @@
     </div>
   </div>
   
-  <footer class="attribution">
+  <footer class="attribution" role="contentinfo">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://github.com/HawiCaesar">HawiCaesar</a>.
   </footer>
