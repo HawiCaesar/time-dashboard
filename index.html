@@ -15,6 +15,8 @@
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
+  <script id="data" type="application/json"></script>
+  <script src="./script.js" type="text/javascript" defer></script>
 </head>
 <body>
 
@@ -31,108 +33,63 @@
         </div>
       </div>
       <div class="links">
-        <div class="link-item active">Daily</div>
-        <div class="link-item">Weekly</div>
-        <div class="link-item">Monthly</div>
+        <div class="link-item">
+          <a href="#" class="slot-link" id="daily" onclick="getTimeSlotPeriod('daily'); return false;">Daily</a>
+        </div>
+        <div class="link-item">
+          <a href="#" class="slot-link" id="weekly" onclick="getTimeSlotPeriod('weekly'); return false;">Weekly</a></div>
+        <div class="link-item">
+          <a href="#" class="slot-link" id="monthly" onclick="getTimeSlotPeriod('monthly'); return false;">Monthly</a></div>
       </div>
     </div>
     <div class="unused"></div>
-    <div class="timeslot-1">
+    <div class="timeslot-1" id="work">
       <div class="slot-info">
         <div class="slot-title">Work</div>
-        <span class="duration-now">32 hrs</span>
-        <span class="duration-lastweek">Last Week - 36 hrs</span>
+        <span class="duration-current"></span>
+        <span class="duration-previous"></span>
       </div>
     </div>
-    <div class="timeslot-2">
+    <div class="timeslot-2" id="play">
       <div class="slot-info">
         <div class="slot-title">Play</div>
-        <span class="duration-now">10 hrs</span>
-        <span class="duration-lastweek">Last Week - 8 hrs</span>
+        <span class="duration-current"></span>
+        <span class="duration-previous"></span>
       </div>
     </div>
-    <div class="timeslot-3">
+    <div class="timeslot-3" id="study">
       <div class="slot-info">
         <div class="slot-title">Study</div>
-        <span class="duration-now">4 hrs</span>
-        <span class="duration-lastweek">Last Week - 7 hrs</span>
+        <span class="duration-current"></span>
+        <span class="duration-previous"></span>
       </div>
     </div>
-    <div class="timeslot-4">
+    <div class="timeslot-4" id="exercise">
       <div class="slot-info">
         <div class="slot-title">Exercise</div>
-        <span class="duration-now">4 hrs</span>
-        <span class="duration-lastweek">Last Week - 5 hrs</span>
+        <span class="duration-current"></span>
+        <span class="duration-previous"></span>
       </div>
     </div>
-    <div class="timeslot-5">
+    <div class="timeslot-5" id="social">
       <div class="slot-info">
         <div class="slot-title">Social</div>
-        <span class="duration-now">5 hrs</span>
-        <span class="duration-lastweek">Last Week - 10 hrs</span>
+        <span class="duration-current"></span>
+        <span class="duration-previous"></span>
       </div>
     </div>
-    <div class="timeslot-6">
+    <div class="timeslot-6" id="self">
       <div class="slot-info">
         <div class="slot-title">Self Care</div>
-        <span class="duration-now">2 hrs</span>
-        <span class="duration-lastweek">Last Week - 2 hrs</span>
+        <span class="duration-current"></span>
+        <span class="duration-previous"></span>
       </div>
     </div>
   </div>
-
-  Work
-  5hrs <!-- daily -->
-  Previous - 7hrs <!-- daily -->
-  32hrs <!-- weekly -->
-  Previous - 36hrs <!-- weekly -->
-  103hrs <!-- monthly -->
-  Previous - 128hrs <!-- monthly -->
-
-  Play
-  1hr <!-- daily -->
-  Previous - 2hrs <!-- daily -->
-  10hrs <!-- weekly -->
-  Previous - 8hrs <!-- weekly -->
-  23hrs <!-- monthly -->
-  Previous - 29hrs <!-- monthly -->
-
-  Study
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 7hrs <!-- weekly -->
-  13hrs <!-- monthly -->
-  Previous - 19hrs <!-- monthly -->
-
-  Exercise
-  1hr <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  4hrs <!-- weekly -->
-  Previous - 5hrs <!-- weekly -->
-  11hrs <!-- monthly -->
-  Previous - 18hrs <!-- monthly -->
-
-  Social
-  1hr <!-- daily -->
-  Previous - 3hrs <!-- daily -->
-  5hrs <!-- weekly -->
-  Previous - 10hrs <!-- weekly -->
-  21hrs <!-- monthly -->
-  Previous - 23hrs <!-- monthly -->
-
-  Self Care
-  0hrs <!-- daily -->
-  Previous - 1hr <!-- daily -->
-  2hrs <!-- weekly -->
-  Previous - 2hrs <!-- weekly -->
-  7hrs <!-- monthly -->
-  Previous - 11hrs <!-- monthly -->
-
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://github.com/HawiCaesar">HawiCaesar</a>.
   </div>
 </body>
 </html>

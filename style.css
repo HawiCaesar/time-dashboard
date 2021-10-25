@@ -5,7 +5,7 @@ body {
 }
 .wrapper {
     display: grid;
-    margin: 0 148px;
+    margin: 120px 148px;
 
     /* have the 4 columns with 1 fragment */
     grid-template-columns: repeat(4, 1fr);
@@ -80,6 +80,12 @@ body {
       border-radius: 15px;
   }
 
+  .slot-info:hover {
+      background-color: hsl(235, 45%, 61%);
+      cursor: pointer;
+
+  }
+
   .slot-title {
       background-image: url('./images/icon-ellipsis.svg');
       background-repeat: no-repeat;
@@ -99,7 +105,6 @@ body {
   
   .links {
       height: 150px;
-    
   }
 
   .profile-image, .profile-detail {
@@ -114,14 +119,15 @@ body {
     font-weight: 300;
   }
 
-  .duration-now {
+  .duration-current {
       padding-left: 30px;
       font-size: 50px;
       font-weight: 300;
   }
 
-  .duration-lastweek {
+  .duration-previous {
     padding-left: 30px;
+    padding-top: 8px;
     font-size: 15px;
     color: hsl(236, 100%, 87%);
     display: block;
@@ -147,11 +153,15 @@ body {
 
   .link-item {
     margin: 15px 32px;
+  }
+
+  .slot-link {
+    text-decoration: none;
     color: #7078C9;
   }
 
-  .link-item.active {
-      color: white;
+  .slot-link:hover, .slot-link.active {
+    color: white;
   }
 
 @media screen and (max-width: 375px) {
@@ -213,12 +223,14 @@ body {
       .slot-title {
           padding-bottom: 7px;
       }
-    .duration-now {
+    .duration-current {
         font-size: 32px;
     }
   
-    .duration-lastweek {
+    .duration-previous {
         display: inline;
+        font-size: 13px;
+        padding-top: 0;
     }
 
     .links {
